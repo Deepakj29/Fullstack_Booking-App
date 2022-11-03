@@ -1,0 +1,50 @@
+
+.templatecontainer{
+    display: flex;
+    flex-direction: column;
+}
+.templatewrap{
+    display: flex;
+    flex-direction: row;
+ 
+}
+.tempcol{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    column-gap: 20px;
+    position:fixed;
+    z-index: 2;
+    font-family: cursive;
+}
+.tempcol>a{
+    color:rgb(253, 253, 253);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;   
+    border-radius: 10px;
+    padding: 10px;
+}
+.tempcol>a:hover{
+    background-color: rgb(38, 0, 255);
+    color:red;
+}
+
+
+
+@media only screen and (max-width:600px) {
+    .tempcol{
+        display: flex;
+        flex-direction: column;    
+        height: auto;
+        gap: 10px;
+        position:absolute;
+        cursor: pointer;
+
+    }
+  
+}

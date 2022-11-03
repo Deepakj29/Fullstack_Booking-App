@@ -1,0 +1,77 @@
+.foodcontainer{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-image: url(D:/Booking-App/client/public/Assets/food/buffet.jpg);
+  background-blend-mode:color-dodge;
+  background-color:rgb(84, 44, 24);
+  background-size: cover;
+}
+.foodrow{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.foodcol{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ color:rgb(211, 229, 12);
+ font-weight: bolder;
+ font-style: italic;
+ font-size: 20px;
+ font-family: cursive;
+ 
+}
+.foodcol>p{
+  font-size: 20px;
+}
+
+.fmenu{
+  text-align: center;
+  color: indigo;
+}
+
+.pList{
+    width: 100%;
+    max-width: 1024px;
+    display: flex;
+   
+    gap: 20px;
+    
+  }
+  
+  .pListItem{
+    flex:1;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+
+  
+    
+  }
+  
+  .pListImg{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .pListTitles>h1{
+    font-size: 18px;
+    color: #444;
+    text-transform: capitalize;
+  }
+  
+  .pListTitles>h2{
+    font-size: 14px;
+    font-weight: 300;
+  }
+  .fooditems{
+    display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  }

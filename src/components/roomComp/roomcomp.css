@@ -1,0 +1,145 @@
+.roomcontainer{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url(D:/Booking-App/client/public/Assets/room-4.jpeg);
+    background-size: cover;
+    background-blend-mode:color-dodge;
+    background-color:rgb(11, 30, 101);
+
+}
+.roomitem{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.roomit{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 150px;
+    color:aqua;
+    background-color:grey;
+    background-blend-mode:soft-light;
+    opacity: .7;
+    font-family:cursive;
+    font-style: oblique;
+}
+.roomit>button{
+    background-color:aqua;
+    padding: 10px;
+    border-radius: 5px;
+    
+}
+.roomit>button>a{
+    text-decoration: none;
+    
+}
+.roomit>p{
+    font-size: 20px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.searchcontainer{
+    display: flex;
+    flex-direction: column;
+    background-color:rgb(12, 217, 217);
+    width: 100%;
+    height: 50vh;
+}
+.searchrow{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+    z-index: 0;
+}
+
+
+
+.searchitems{
+    display: flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+    padding: 20px;
+}
+.searchcontainer>h1{
+text-align: center;
+color: rgb(63, 63, 146) ;
+font-size: 40px;
+}
+
+
+
+.roomlist{
+    width: 100%;
+    max-width: 1024px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .roomitem{
+    flex:1;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+   
+  }
+  .rtitles{
+    position:relative;
+    z-index: 1;
+    bottom:70px;
+    
+  }
+  
+  .rimg{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .rtitles>h1{
+    font-size: 18px;
+    color: rgb(5, 209, 245);
+   
+  }
+  
+  .rtitles>h2{
+    font-size: 14px;
+    font-weight: 300;
+    color: rgb(251, 218, 3);
+  }
+  .roomcon{
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(124, 165, 253);
+    color: indigo;
+    font-family: cursive;
+  }
+
+
+@media only screen and (max-width:600px) {
+    .roomit{
+        padding: 0px;
+    }
+    .searchitems{
+        display: flex;
+        flex-direction:column;
+        gap: 10px;
+     
+        padding: 0px;
+    }
+
+    .roomlist{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}
